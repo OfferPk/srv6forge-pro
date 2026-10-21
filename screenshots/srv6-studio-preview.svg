@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgDarkSrv6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="accentGradSrv6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgDarkSrv6)"/>
+
+  <!-- Top App Header -->
+  <rect x="30" y="24" width="1140" height="60" rx="10" fill="#0b1120" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="46" y="38" width="135" height="32" rx="8" fill="url(#accentGradSrv6)"/>
+  <text x="113" y="59" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="900" font-size="11" text-anchor="middle">SRv6 &bull; uSID</text>
+  
+  <text x="195" y="55" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="800" font-size="18">SRv6Forge Pro</text>
+  <text x="390" y="55" fill="#06b6d4" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">v1.0.0</text>
+  <text x="445" y="55" fill="#64748b" font-family="-apple-system, sans-serif" font-size="13">| Zero-Trust SRv6 &amp; Micro-SID Studio</text>
+
+  <rect x="850" y="40" width="150" height="28" rx="14" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-opacity="0.4"/>
+  <text x="925" y="58" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">RFC 8754 / RFC 8986</text>
+
+  <rect x="1015" y="40" width="145" height="28" rx="14" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4"/>
+  <text x="1087" y="58" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" text-anchor="middle">SCORE: 100/100 (A+)</text>
+
+  <!-- Left Column: Parameters & Fabric Settings -->
+  <rect x="30" y="100" width="555" height="545" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="50" y="130" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">1. Node &amp; Locator Architecture</text>
+
+  <rect x="50" y="145" width="245" height="48" rx="6" fill="#02040a" stroke="#1e293b"/>
+  <text x="60" y="163" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">ROUTER ID &amp; BGP ASN</text>
+  <text x="60" y="182" fill="#06b6d4" font-family="monospace" font-size="12" font-weight="700">192.0.2.1 (ASN 65001)</text>
+
+  <rect x="315" y="145" width="250" height="48" rx="6" fill="#02040a" stroke="#1e293b"/>
+  <text x="325" y="163" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">LOCATOR BLOCK (uSID /32)</text>
+  <text x="325" y="182" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">fcbb:bb00::/32 (16-bit shift)</text>
+
+  <!-- Probe Preview and Sizing -->
+  <rect x="50" y="205" width="515" height="45" rx="6" fill="#082f49" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="65" y="225" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">⚡ Micro-SID Active &bull; MTU: 9192B &bull; H.Encaps.Red Enabled</text>
+  <text x="65" y="241" fill="#94a3b8" font-family="monospace" font-size="10">Behaviors: End, End.X, End.DT4 &bull; VRF: VRF_5G_UPF &bull; S-BFD: Active</text>
+
+  <!-- Hardening Controls Grid -->
+  <text x="50" y="275" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">2. Zero-Trust Network Safeguards</text>
+  
+  <rect x="50" y="290" width="245" height="45" rx="6" fill="#082f49" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="65" y="310" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">🔒 RFC 8754 Sec 5 Filter</text>
+  <text x="65" y="326" fill="#94a3b8" font-family="monospace" font-size="10">Drops external SID steering</text>
+
+  <rect x="315" y="290" width="250" height="45" rx="6" fill="#082f49" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="330" y="310" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">📦 9192B Jumbo MTU</text>
+  <text x="330" y="326" fill="#94a3b8" font-family="monospace" font-size="10">Absorbs 64B SRH overhead</text>
+
+  <rect x="50" y="345" width="245" height="45" rx="6" fill="#082f49" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="65" y="365" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">🌐 TI-LFA Fast Reroute</text>
+  <text x="65" y="381" fill="#94a3b8" font-family="monospace" font-size="10">Sub-50ms backup SID paths</text>
+
+  <rect x="315" y="345" width="250" height="45" rx="6" fill="#082f49" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="330" y="365" fill="#22d3ee" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">⚡ Seamless BFD Tracking</text>
+  <text x="330" y="381" fill="#94a3b8" font-family="monospace" font-size="10">&le; 300ms candidate path probe</text>
+
+  <!-- Technical Summary Card -->
+  <rect x="50" y="410" width="515" height="215" rx="8" fill="#02040a" stroke="#1e293b"/>
+  <text x="65" y="435" fill="#06b6d4" font-family="-apple-system, sans-serif" font-weight="700" font-size="12">SRv6 NETWORK PROGRAMMING SPECIFICATION:</text>
+  <text x="65" y="460" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">&bull; Standard RFC 8754 Routing Type 4 Segment Routing Header (SRH)</text>
+  <text x="65" y="485" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">&bull; Micro-SID (uSID) compresses 6 instructions into single 128-bit carrier</text>
+  <text x="65" y="510" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">&bull; End.DT4/DT6 decapsulates directly into isolated tenant VRF FIB table</text>
+  <text x="65" y="535" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">&bull; 10-Point Zero-Trust rubric audits MTU headroom, boundary ACLs &amp; S-BFD</text>
+  <text x="65" y="575" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">✅ Production Verified: Cisco IOS-XR, Juniper Junos, Nokia SR-OS &amp; Linux</text>
+
+  <!-- Right Column: Scorecard & Wireframe / Synthesizer -->
+  <rect x="615" y="100" width="555" height="545" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Score banner -->
+  <rect x="635" y="120" width="515" height="65" rx="10" fill="#071b16" stroke="#10b981" stroke-width="1.2"/>
+  <rect x="650" y="128" width="48" height="48" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981"/>
+  <text x="674" y="160" fill="#34d399" font-family="monospace" font-weight="800" font-size="22" text-anchor="middle">A+</text>
+  <text x="715" y="145" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Zero-Trust SRv6 Score: 100 / 100</text>
+  <text x="715" y="165" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">uSID Carrier Active • H.Encaps.Red • TI-LFA Protected • Jumbo Safe 9192B</text>
+
+  <!-- Binary SRH Hex Dump -->
+  <text x="635" y="210" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">RFC 8754 SRH Wireframe &amp; Hex Dump (Routing Type 4)</text>
+  <rect x="635" y="220" width="515" height="120" rx="8" fill="#02040a" stroke="#1e293b"/>
+  <text x="650" y="242" fill="#64748b" font-family="monospace" font-size="10">// IPv6 Base (40B) + Segment Routing Header (Routing Type 4) shown:</text>
+  <text x="650" y="262" fill="#38bdf8" font-family="monospace" font-size="10">0000:  6b 81 31 72 00 48 2b 40  20 01 0d b8 ff ff 00 00  |k.1r.H+@ .......|</text>
+  <text x="650" y="282" fill="#06b6d4" font-family="monospace" font-size="10">0010:  00 00 00 00 00 00 00 01  fc bb bb 00 00 03 00 04  |................|</text>
+  <text x="650" y="302" fill="#34d399" font-family="monospace" font-size="10">// SRH Type 4 | NextHdr: 4 (IPv4) | SegLeft: 1 | SIDs: 2 (uSID Carrier)</text>
+
+  <!-- Synthesizer Output -->
+  <text x="635" y="365" fill="#f9fafb" font-family="-apple-system, sans-serif" font-weight="700" font-size="13">Multi-Vendor Synthesizer (Active: Cisco IOS-XR)</text>
+  <rect x="635" y="375" width="515" height="250" rx="8" fill="#02040a" stroke="#1e293b"/>
+  <text x="650" y="400" fill="#64748b" font-family="monospace" font-size="10">! Cisco IOS-XR (v7.3+) SRv6 / uSID Network Programming</text>
+  <text x="650" y="420" fill="#06b6d4" font-family="monospace" font-size="10">segment-routing srv6</text>
+  <text x="650" y="440" fill="#38bdf8" font-family="monospace" font-size="10"> locators locator uSID_LOC01</text>
+  <text x="650" y="460" fill="#38bdf8" font-family="monospace" font-size="10">  micro-segment behavior uncompressed</text>
+  <text x="650" y="480" fill="#38bdf8" font-family="monospace" font-size="10">  prefix fcbb:bb00::/32 block-len 32 node-len 16 func-bits 16</text>
+  <text x="650" y="500" fill="#06b6d4" font-family="monospace" font-size="10">router isis 100</text>
+  <text x="650" y="525" fill="#34d399" font-family="monospace" font-size="10"> fast-reroute per-prefix ti-lfa</text>
+  <text x="650" y="550" fill="#34d399" font-family="monospace" font-size="10"> segment-routing srv6 locator uSID_LOC01</text>
+  <text x="650" y="585" fill="#94a3b8" font-family="monospace" font-size="10">! Also synthesizes: Juniper Junos, Nokia SR-OS, Linux Kernel, Prometheus</text>
+  <text x="650" y="610" fill="#06b6d4" font-family="-apple-system, sans-serif" font-weight="700" font-size="11">✅ 1-Click Multi-Vendor SRv6 Telco Cloud Deployment</text>
+</svg>
